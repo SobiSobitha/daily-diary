@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Diary</h1>
+
+        <form id="diaryForm">
+            <label for="mood">Mood:</label>
+            <input type="text" id="mood" placeholder="How are you feeling?" required>
+            
+            <label for="highlights">Highlights of the day:</label>
+            <textarea id="highlights" placeholder="What stood out today?" required></textarea>
+            
+            <label for="goals">Goals for today:</label>
+            <textarea id="goals" placeholder="Your objectives for today" required></textarea>
+            
+            <label for="lessons">Lessons learned:</label>
+            <textarea id="lessons" placeholder="Anything you learned today?" required></textarea>
+            
+            <label for="gratitude">Gratitude:</label>
+            <textarea id="gratitude" placeholder="What are you thankful for?" required></textarea>
+            
+            <button type="submit">Save Entry</button>
+        </form>
+
+        <h2>Previous Entries</h2>
+        <div id="entries">
+            <!-- Diary entries will be displayed here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
